@@ -13,7 +13,7 @@
     <li><code>-u http://10.10.151.30/</code>: Especifica la URL del objetivo, en este caso el sitio web.</li>
     <li><code>-w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt</code>: Utiliza un diccionario de directorios comunes para el fuzzing.</li>
 </ul>
-<img src="https://github.com/tuusuario/tuRepositorio/paso1.png" alt="Ejecución de Gobuster" width="450" height="200">
+<img src="https://github.com/luiszero303/guia-practica-wpscan/blob/main/paso1-wpscan.png" alt="Ejecución de Gobuster" width="450" height="200">
 
 <h2>📌 Paso 2: Identificar tecnologías utilizando <code>WhatWeb</code> y <code>Wappalyzer</code></h2>
 
@@ -26,6 +26,10 @@
     <li><code>WhatWeb</code>: Herramienta que detecta tecnologías como CMS, frameworks y servidores.</li>
     <li><code>Wappalyzer</code>: Extensión de navegador que detecta tecnologías y es útil para análisis visual.</li>
 </ul>
+<div style="display: flex; gap: 10px;">
+    <img src="https://github.com/luiszero303/guia-practica-wpscan/blob/main/paso2-1wpscan.png" alt="Ejecución de WPScan 1" width="450" height="200">
+    <img src="https://github.com/luiszero303/guia-practica-wpscan/blob/main/paso2-2wpscan.png" alt="Ejecución de WPScan 2" width="450" height="200">
+</div>
 
 <h2>📌 Paso 3: Enumerar usuarios con <code>WPScan</code></h2>
 
@@ -38,7 +42,7 @@
     <li><code>--url http://10.10.151.30</code>: Especifica la URL del sitio objetivo.</li>
     <li><code>--enumerate u</code>: Enumera los usuarios de WordPress encontrados en el sitio.</li>
 </ul>
-
+<img src="https://github.com/luiszero303/guia-practica-wpscan/blob/main/paso3wpscan.png" alt="Ejecución de Gobuster" width="450" height="200">
 <h2>📌 Paso 4: Escaneo más profundo con <code>WPScan</code> utilizando el API Token</h2>
 
 <p>Para un análisis más profundo, podemos usar el API Token con <code>WPScan</code> para obtener detalles adicionales:</p>
@@ -49,7 +53,7 @@
     <li><code>--enumerate p</code>: Enumera los plugins instalados en el sitio WordPress.</li>
     <li><code>--api-token YOUR_API_TOKEN</code>: Usamos un token de API para acceder a información más detallada sobre vulnerabilidades conocidas.</li>
 </ul>
-
+<img src="https://github.com/luiszero303/guia-practica-wpscan/blob/main/paso4wpscan.png" alt="Ejecución de Gobuster" width="450" height="200">
 <h2>🎯 Conclusión</h2>
 <ul>
     <li>🔹 Realizamos fuzzing con <code>Gobuster</code> para encontrar directorios ocultos.</li>
